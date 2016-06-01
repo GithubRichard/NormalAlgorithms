@@ -1,11 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Tencent.Modules.TD;
-using Tencent.Utils;
 using UnityEngine;
 
-namespace Assets.Tencent.Scripts.Utils
+namespace Tencent.algorithms
 {
     internal class MergeRectangleToPolygon
     {
@@ -226,7 +224,6 @@ namespace Assets.Tencent.Scripts.Utils
 
     public class PointF
     {
-        public GamePos gamePos;
         public float X;
         public float Y;
 
@@ -234,7 +231,6 @@ namespace Assets.Tencent.Scripts.Utils
         {
             X = x;
             Y = y;
-            gamePos = new GamePos((int)X,(int)Y);
         }
 
         public override bool Equals(object obj)
